@@ -13,4 +13,123 @@ h1 {
 .computerPart, .playerPart {
   width: inherit;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playerPart img {
+  filter: invert(13%) sepia(6%) saturate(1520%) hue-rotate(294deg) brightness(95%) contrast(38%) drop-shadow(2px 4px 6px #4A4546);
+}
+
+.bouncing-text {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.l, .e, .t, .apostrophe, .s, .p, .l2, .a, .y {
+  text-shadow: 0 3px rgb(201, 167, 166, .5), 0 7px #4A4546;
+}
+
+@keyframes bounce {
+  0% { transform: scale(1,1) translateY(0); }
+  10% { transform: scale(1.1,.9) translateY(0); }
+  30% { transform: scale(.9,1.1) translateY(-55px); }
+  50% { transform: scale(1.05,.95) translateY(0); }
+  58% { transform: scale(1,1) translateY(-7px); }
+  65% { transform: scale(1,1) translateY(0); }
+  100% { transform: scale(1,1) translateY(0); }
+}
+
+.l {
+  animation: bounce 1s ease infinite .1s;
+}
+
+.e {
+  animation: bounce 1s ease infinite .2s;
+}
+
+.t {
+  animation: bounce 1s ease infinite .3s;
+}
+
+.apostrophe {
+  animation: bounce 1s ease infinite .4s;
+}
+
+.s {
+  animation: bounce 1s ease infinite .5s;
+}
+
+.p {
+  animation: bounce 1s ease infinite .6s;
+}
+
+.l2 {
+  animation: bounce 1s ease infinite .7s;
+}
+
+.a {
+  animation: bounce 1s ease infinite .8s;
+}
+
+.y {
+  animation: bounce 1s ease infinite .9s;
+}
+
+.bouncing-text::before, .bouncing-text::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 50%;
+  top: 82px;
+  z-index: -1;
+}
+
+.shadow, .shadow-two {
+  position: absolute;
+  top: 82px;
+  z-index: -1;
+}
+
+.shadow::before, .shadow::after, .shadow-two ::before, .shadow-two ::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 50%;
+  top: 0;
+}
+
+.bouncing-text ::before {
+  left: 0;
+  animation: scale 1s linear infinite;
+}
+
+@keyframes scale {
+  0% {transform: scaleX(1);}
+  25% {transform: scaleX(0.4);}
+  50% {transform: scaleX(1);}
+  75% {transform: scaleX(0.9);}
+  100% {transform: scaleX(1);}
+}
+
+.bouncing-text ::after {
+  left: 57px;
+  animation: scale 1s linear infinite 1s;
+}
+
+.shadow ::before {
+  left: 116px;
+  animation: scale 1s linear infinite .2s;
+}
+
+.shadow::after {
+  left: 175px;
+  animation: scale 1s linear infinite .4s;
+}
+
+.shadow-two::after {
+  left: 285px;
+  animation: scale 1s linear infinite .5s;
 }
