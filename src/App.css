@@ -1,38 +1,148 @@
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(../public/assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url(../public/assets/fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(../public/assets/fonts/Poppins-Medium.ttf);
+}
+
 .App {
   text-align: center;
+  overflow-y: hidden;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* LIGHT BACKGROUND */
+.lightBackground {
+  background-color: #DCDAE0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* DARK BACKGROUND */
+.darkBackground {
+  background-color: #4A4546;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* LIGHT TEXT */
+.lightText {
+  color: #966874;
 }
 
-.App-link {
-  color: #61dafb;
+.lightText:hover {
+  color: #635356;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* DARK TEXT */
+.darkText {
+  color: #CEBDC6;
+}
+
+.darkText:hover {
+  color: #C9A7A6;
+}
+
+/* LIGHT BUTTON */
+.lightButton {
+  cursor: pointer;
+  border: 1px solid #635356;
+  background-color: transparent !important;
+}
+
+.lightButton:hover {
+  background-color: rgb(150, 104, 116, .5)  !important;
+}
+
+/* DARK BUTTON */
+.darkButton {
+  cursor: pointer;
+  border: 1px solid #CEBDC6;
+  background-color: transparent !important;
+}
+
+.darkButton:hover {
+  background-color: rgb(201, 167, 166, .5) !important;
+}
+
+/* POPPINS-BOLD */
+.textBoldXS {
+  font-family: Poppins-Bold;
+  font-size: 12px;
+}
+
+.textBoldS {
+  font-family: Poppins-Bold;
+  font-size: 18px;
+}
+
+.textBoldM {
+  font-family: Poppins-Bold;
+  font-size: 24px;
+}
+
+.textBoldL {
+  font-family: Poppins-Bold;
+  font-size: 36px;
+}
+
+.textBoldXL {
+  font-family: Poppins-Bold;
+  font-size: 48px;
+}
+
+/* POPPINS-LIGHT */
+.textLightXS {
+  font-family: Poppins-Light;
+  font-size: 12px;
+}
+
+.textLightS {
+  font-family: Poppins-Light;
+  font-size: 18px;
+}
+
+.textLightM {
+  font-family: Poppins-Light;
+  font-size: 24px;
+}
+
+.textLightL {
+  font-family: Poppins-Light;
+  font-size: 36px;
+}
+
+.textLightXL {
+  font-family: Poppins-Light;
+  font-size: 48px;
+}
+
+/* POPPINS-MEDIUM */
+.textMediumXS {
+  font-family: Poppins-Medium;
+  font-size: 12px;
+}
+
+.textMediumS {
+  font-family: Poppins-Medium;
+  font-size: 18px;
+}
+
+.textMediumM {
+  font-family: Poppins-Medium;
+  font-size: 24px;
+}
+
+.textMediumL {
+  font-family: Poppins-Medium;
+  font-size: 36px;
+}
+
+.textMediumXL {
+  font-family: Poppins-Medium;
+  font-size: 48px;
 }
