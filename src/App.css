@@ -24,6 +24,12 @@
   background-color: #DCDAE0;
 }
 
+.mediumBackground {
+  background-color: #C9A7A6;
+  display: flex;
+  align-items: baseline;
+}
+
 /* DARK BACKGROUND */
 .darkBackground {
   background-color: #4A4546;

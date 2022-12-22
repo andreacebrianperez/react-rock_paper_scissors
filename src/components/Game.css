@@ -133,3 +133,34 @@ h1 {
   left: 285px;
   animation: scale 1s linear infinite .5s;
 }
+
+.rock img, .paper img, .scissors img {
+  width: 40px;
+}
+
+.noDisplay {
+  display: none;
+}
+
+body div:nth-of-type(2) h2 {
+  animation: placeholderAni 0.9s infinite linear;
+}
+
+@keyframes placeholderAni {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-0.4rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+span {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
